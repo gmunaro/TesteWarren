@@ -15,5 +15,5 @@ LEFT JOIN
     orders AS o ON s.staff_id = o.staff_id
 WHERE
 -- Os funcionários que não possuem pedido associado, terão as colunas de `orders` como `NULL`.
--- Assim, o filtro `o.order_id IS NULL` os identificará.
+-- Assim, o filtro `o.order_id IS NULL` os identificará..
     o.order_id IS NULL;
